@@ -32,11 +32,16 @@ func main() {
 			zipCode: 1111,
 		},
 	}
-	jimPointer := &jim //
-	jimPointer.updateFirstName("Joe")
-	fmt.Println(&jimPointer)
-	fmt.Println(jimPointer)
-	fmt.Println(jim)
+	//jimPointer := &jim
+	//jimPointer.updateFirstName("Joe")
+	//jimPointer.updateFirstName("Joe")
+
+	jim.updateFirstName("Joe") //in GO jim can be a point of a person too, not just a person
+	jim.print()
+
+	//fmt.Println(&jimPointer)
+	//fmt.Println(jimPointer)
+	//fmt.Println(jim)
 
 }
 
